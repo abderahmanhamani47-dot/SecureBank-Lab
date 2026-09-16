@@ -1,21 +1,23 @@
-# SecureBank Lab 🔐
+# 🔐 SecureBank Lab
 
-## Overview
+## 📌 Overview
 
-SecureBank Lab is a deliberately vulnerable banking web application built in a controlled virtualized environment for practicing Web Application Penetration Testing.
+SecureBank Lab is a deliberately vulnerable banking web application
+built in a controlled virtualized environment for practicing
+Web Application Penetration Testing.
 
-The project is designed to simulate a realistic security assessment workflow, from reconnaissance and enumeration to vulnerability discovery, exploitation, impact analysis, and documentation.
+The objective is to reproduce a realistic penetration testing workflow:
+reconnaissance, enumeration, vulnerability discovery, exploitation,
+impact analysis and documentation.
 
-## Objectives
+## 🏗️ Lab Environment
 
-- Practice web application penetration testing
-- Understand authentication and authorization mechanisms
-- Identify access control vulnerabilities
-- Analyze HTTP requests and user-controlled parameters
-- Document security findings and proof of concept
-- Understand the impact of vulnerable application logic
+- Virtualized Linux environment
+- Flask web application
+- SQLite database
+- Controlled laboratory environment
 
-## Technologies
+## 🛠️ Technologies
 
 - Python
 - Flask
@@ -25,7 +27,7 @@ The project is designed to simulate a realistic security assessment workflow, fr
 - Nmap
 - Git / GitHub
 
-## Pentesting Methodology
+## 🔎 Pentesting Methodology
 
 ```text
 Reconnaissance
@@ -34,42 +36,45 @@ Enumeration
       ↓
 Vulnerability Discovery
       ↓
-Exploitation
+Validation / Exploitation
       ↓
 Impact Analysis
       ↓
 Documentation
       ↓
 Remediation
-Security Findings
+🧪 Security Testing
 IDOR / Broken Access Control
 
-An IDOR vulnerability was identified in the user profile functionality.
+During testing, an IDOR vulnerability was identified in the
+user profile functionality.
 
-The application uses a user-controlled id parameter:
+The application uses a user-controlled identifier:
 
 /user?id=1
 
-By modifying the identifier, an authenticated user can access another user's information without proper authorization checks.
+By modifying the identifier, an authenticated user can access
+another user's information without an appropriate authorization check.
 
-This demonstrates a Broken Access Control vulnerability.
+This demonstrates an access control vulnerability.
 
-Controlled Environment
+📸 Screenshots
 
-This application is intentionally vulnerable and is used exclusively in a controlled laboratory environment for educational and cybersecurity training purposes.
+Screenshots documenting the security testing process are available
+in the screenshots/ directory.
 
-Project Status
+⚠️ Disclaimer
 
-The laboratory is being continuously expanded with additional security testing, vulnerability analysis, and documentation.
+This project is intentionally vulnerable and is used exclusively
+for educational purposes in a controlled laboratory environment.
+
+It must not be deployed on or used against systems without
+explicit authorization.
+
+🚀 Project Status
+
+The laboratory is continuously being expanded with additional
+security testing, vulnerability analysis and documentation.
 
 
-### 3️⃣ Save
-
-Hbet lta7t w klik:
-
-**Commit changes**
-
-Commit message khallih:
-
-```text
-Add project documentation
+ومن بعد:
